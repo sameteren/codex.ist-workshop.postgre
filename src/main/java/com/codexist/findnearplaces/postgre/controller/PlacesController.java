@@ -20,5 +20,10 @@ public class PlacesController {
         FindPlacesResponse findPlacesResponse = placesService.findNearlyPlaces(longitude,latitude,radius);
         return ResponseEntity.ok(findPlacesResponse);
     }
+    @RequestMapping(value="/", method = RequestMethod.GET)
+    @ResponseBody
+    public ResponseEntity<String> home(){
+        return ResponseEntity.ok("samet");
+    }
 
 }
