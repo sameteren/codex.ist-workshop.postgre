@@ -1,2 +1,1 @@
-web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
-JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 -Dspring.profiles.active=prod
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar app.jar
