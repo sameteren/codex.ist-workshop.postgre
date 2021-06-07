@@ -1,0 +1,8 @@
+{
+  "name": "postgre",
+  "buildpacks": [
+    {
+      "url": "heroku/gradle"
+    }
+  ]
+}
